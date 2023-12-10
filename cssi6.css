@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-height: 1200px;
+    width: 90%;
+    background-image: url(bgslider.jpg);
+}
+
+.slider-wrapper .img-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(6,1fr);
+    margin-bottom: 30px;
+}
+
+.slider-wrapper .img-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .img-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(238, 202, 154);
+    display: flex;
+    align-items: center;
+    display: none !important;
+}
+
+.slider-scrollbar .scrollbar-track{
+    height: 6px;
+    width: 100%;
+    background-color: rgb(168, 142, 63);
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+    height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+.slide-button{
+    background: #9f8a22;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button#prev-button{
+    left: -20px;
+}
+
+.slider-wrapper .slide-button#next-button{
+    right: -20px;
+}
+
+.slider-wrapper{
+    position: relative;
+}
+
+body{
+    background-image: url(bgslider.jpg);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.slider-wrapper h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9f8a22;
+}
+
