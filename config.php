@@ -1,9 +1,5 @@
 <?php
 
-$db_name = "mysql:host=localhost;dbname=user_form";
-$username = "root";
-$password = "";
-
-$conn = new PDO($db_name, $username, $password);
+$conn = mysqli_connect('localhost','mydatabase_admin','','shop_db') or die('connection failed');
 
 ?>

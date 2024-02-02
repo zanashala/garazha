@@ -16,7 +16,7 @@
                 <li><a href="#">Ballina</a></li>
                 <li><a href="punimet.php">Punimet</a></li>
                 <li><a href="kontakti.php">Kontakti</a></li>
-                <li><a href="Produkti.php">Shop</a></li>
+                <li><a href="products.php">Shop</a></li>
                 <li><a href="new.html.php">News</a></li>
                 <li><a href="login.php">Login</a></li>
             </ul>
