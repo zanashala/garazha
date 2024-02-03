@@ -1,0 +1,133 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Navigation */
+.nav-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-area li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-area li:first-child {
+    margin-left: 0;
+}
+
+.nav-area li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Welcome Text */
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome-text h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.welcome-text a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: white;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-area li {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-area {
+        margin-top: 10px;
+    }
+
+    .welcome-text {
+        width: 90%;
+        left: 5%;
+    }
+
+    .welcome-text h1 {
+        font-size: 2em;
+    }
+
+    .welcome-text a {
+        padding: 8px 20px; 
+        font-size: 14px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0 5px; 
+    }
+
+    .nav-area {
+        margin-top: 5px;
+    }
+
+    .nav-area li {
+        display: block;
+        margin: 5px auto;
+    }
+
+    .welcome-text {
+        width: 90%;
+        left: 5%;
+    }
+
+    /* Stilizimi i tekstit dhe butonave për madhësi të telefonit */
+    .welcome-text h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .welcome-text a {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
