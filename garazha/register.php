@@ -1,6 +1,6 @@
 <?php
 
-include 'config1.php';
+include 'config.php';
 
 if(isset($_POST['submit'])){
 
@@ -29,8 +29,9 @@ if(isset($_POST['submit'])){
       }elseif($image_size > 2000000){
          $message[] = 'image size is too large!';
       }else{
-         $insert = $conn->prepare("INSERT INTO `users`(name, email, password, image) VALUES(?,?,?,?)");
+         $insert = $conn->prepare("INSERT INTO `users`(username, email, password, image) VALUES(?,?,?,?)");
          $insert->execute([$name, $email, $cpass, $image]);
+
          if($insert){
             move_uploaded_file($image_tmp_name, $image_folder);
             $message[] = 'registered succesfully!';
