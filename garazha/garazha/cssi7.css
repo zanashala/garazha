@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -28,4 +29,36 @@
 footer{
     text-align: center;
     min-height: 30px;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.about-section{
+    padding: 50px;
+  text-align: center;
+  background-color: #9f8a22;
+  color: white;
+}
+
+.contact-section{
+    padding: 50px;
+    min-height: 70vh;
+    color: #9f8a22;
+    text-align: center;
+}
+
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+}
+
+footer{
+    text-align: center;
+    min-height: 30px;
+>>>>>>> f5cc7fd07694562e0025755edd0562732c17522f
 }

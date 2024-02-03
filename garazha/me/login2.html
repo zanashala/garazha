@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,4 +60,67 @@ signupBtn.onclick = function(){
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyquni</title>
+    <link rel="stylesheet" href="cssi5.css">
+    <script src="https://kit.fontawesome.com/9856196c09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Regjistrohu</h1>
+        <form action="">
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Emri">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Fjalëkalimi">
+                </div>
+                <p>Keni harrur fjalëkalimin? <a href="#">Kliko këtu</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Regjistrohu</button>
+                <button type="button" class="disable" id="signinBtn">Kyqu</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
+
+signinBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+    title.innerHTML = "Kyqu";
+    signupBtn.classList.add("disable")
+    signupBtn.classList.remove("disable")
+}
+
+signupBtn.onclick = function(){
+    nameField.style.maxHeight = "60px";
+    title.innerHTML = "Regjistrohu";
+    signupBtn.classList.remove("disable");
+    signupBtn.classList.add("disable");
+}
+
+</script>
+
+</body>
+>>>>>>> f5cc7fd07694562e0025755edd0562732c17522f
 </html>
